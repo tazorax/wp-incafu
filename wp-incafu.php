@@ -81,6 +81,8 @@ if (!class_exists('WPIncafu')) :
 				$keys = array_keys($options);
                 $parameter_name = $keys[0];
 
+                $param_url = '';
+
 				if (in_array($parameter_name, array('c', 'sc', 'fp'))) {
 					$param_url = '&t=' . $parameter_name . '&' . $parameter_name . '=' . $options[$parameter_name];
 				}
@@ -89,7 +91,7 @@ if (!class_exists('WPIncafu')) :
 
                 if ($incafu_url) {
                     $incafu_content = @file_get_contents(
-                        get_option('incafu_url') .
+                        $incafu_url .
                         '&session=' . $_SESSION['incafu'] .
                         '&ipclient=' . $_SERVER['REMOTE_ADDR'] .
                         $param_url
