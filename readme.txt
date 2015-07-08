@@ -14,22 +14,18 @@ Incafu plugin for WordPress
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. Upload `wp-incafu` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Edit URL on settings page
 1. Place the text [Incafu] on post or page content to show Incafu web module.
 
 To specify element to show on first load, use :
-* Category : [Incafu c=1]
-* Sub-category : [Incafu sc=3]
-* Product : [Incafu fp=18]
+- Category : [Incafu c=1]
+- Sub-category : [Incafu sc=3]
+- Product : [Incafu fp=18]
 
 == Changelog ==
 
 = 1.0 =
-* First version
+- First version
 
