@@ -3,6 +3,7 @@ Contributors: tazorax
 Tags: incafu
 Requires at least: 3.0.1
 Tested up to: 4.2.2
+Stable tag: 1.0
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -20,12 +21,12 @@ Incafu plugin for WordPress
 1. Place the text [Incafu] on post or page content to show Incafu web module.
 
 To specify element to show on first load, use :
-- Category : [Incafu c=1]
-- Sub-category : [Incafu sc=3]
-- Product : [Incafu fp=18]
+
+* Category : `[Incafu c=1]`
+* Sub-category : `[Incafu sc=3]`
+* Product : `[Incafu fp=18]`
 
 == Changelog ==
 
 = 1.0 =
-- First version
-
+* First version
