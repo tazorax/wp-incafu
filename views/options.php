@@ -42,10 +42,19 @@
 			</tr>
 			<tr>
 				<td>
-					<label for="incafu_url">
+					<label for="incafu_css">
 						<p>Extra CSS</p>
 
 						<p><textarea name="incafu_css"><?php echo get_option('incafu_css'); ?></textarea></p>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="incafu_js">
+						<p>Extra JS</p>
+
+						<p><textarea name="incafu_js"><?php echo get_option('incafu_js'); ?></textarea></p>
 					</label>
 				</td>
 			</tr>

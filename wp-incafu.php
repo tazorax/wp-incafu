@@ -35,6 +35,7 @@ if (!class_exists('WPIncafu')) :
 			register_setting(INCAFUPLUGIN_ID . '_options', 'incafu_url');
 			register_setting(INCAFUPLUGIN_ID . '_options', 'incafu_checkout');
 			register_setting(INCAFUPLUGIN_ID . '_options', 'incafu_css');
+			register_setting(INCAFUPLUGIN_ID . '_options', 'incafu_js');
 		}
 
 		/** function/method
@@ -109,6 +110,12 @@ if (!class_exists('WPIncafu')) :
 					$content_replacement .= '<style type="text/css">' . $css . '</style>';
 				}
 
+				$js = get_option('incafu_js');
+
+				if (!empty($js)) {
+					$content_replacement .= '<script type="text/javascript">' . $js . '</script>';
+				}
+
 				$content = str_replace($value, $content_replacement, $content);
 			}
 
@@ -126,3 +133,4 @@ if (!class_exists('WPIncafu')) :
 	wp_register_style('wp-incafu-style', plugins_url('assets/css/incafu.css', __FILE__));
 	wp_enqueue_style('wp-incafu-style');
 endif;
+
